@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		874CDAF5297E351500805DAC /* MyTunesRitageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDAF4297E351500805DAC /* MyTunesRitageApp.swift */; };
+		874CDAF7297E351500805DAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDAF6297E351500805DAC /* ContentView.swift */; };
+		874CDAF9297E351600805DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CDAF8297E351600805DAC /* Assets.xcassets */; };
+		874CDAFC297E351600805DAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CDAFB297E351600805DAC /* Preview Assets.xcassets */; };
+		874CDB0B297E351600805DAC /* MyTunesRitageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB0A297E351600805DAC /* MyTunesRitageTests.swift */; };
+		874CDB29297E363600805DAC /* ItuneItemRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB28297E363600805DAC /* ItuneItemRaw.swift */; };
+		874CDB46297E39B700805DAC /* MusicSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB45297E39B700805DAC /* MusicSearchInteractor.swift */; };
+		874CDB4F297E3C3000805DAC /* MusicSearchBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB4E297E3C3000805DAC /* MusicSearchBusinessLogic.swift */; };
+		874CDB51297E3C6100805DAC /* MusicSearchPresenterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB50297E3C6100805DAC /* MusicSearchPresenterLogic.swift */; };
+		874CDB53297E3C7700805DAC /* MusicSearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB52297E3C7700805DAC /* MusicSearchData.swift */; };
+		874CDB55297E3C8E00805DAC /* MusicSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB54297E3C8E00805DAC /* MusicSearchPresenter.swift */; };
+		874CDB57297E3CA500805DAC /* MusicSearchDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB56297E3CA500805DAC /* MusicSearchDisplayLogic.swift */; };
+		874CDB59297E3CB800805DAC /* MusicSearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB58297E3CB700805DAC /* MusicSearchProvider.swift */; };
+		874CDB5B297E3CD000805DAC /* ItunesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB5A297E3CD000805DAC /* ItunesApiClient.swift */; };
+		874CDB5D297E3CF200805DAC /* GetApiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB5C297E3CF200805DAC /* GetApiDelegate.swift */; };
+		874CDB5F297E3CFE00805DAC /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB5E297E3CFE00805DAC /* ApiError.swift */; };
+		874CDB61297E3D0D00805DAC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB60297E3D0D00805DAC /* APIClient.swift */; };
+		874CDB63297E3D2000805DAC /* MusicSearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB62297E3D2000805DAC /* MusicSearchScreen.swift */; };
+		874CDB67297E3E2E00805DAC /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB66297E3E2E00805DAC /* String + Extensions.swift */; };
+		874CDB69297E552400805DAC /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB68297E552400805DAC /* SongCell.swift */; };
+		874CDB6B297F8DF700805DAC /* PodcastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB6A297F8DF700805DAC /* PodcastList.swift */; };
+		874CDB6F297F8FE100805DAC /* SongDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB6E297F8FE100805DAC /* SongDetailsScreen.swift */; };
+		874CDB7A297FA38D00805DAC /* AsyncImage + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB79297FA38D00805DAC /* AsyncImage + Extensions.swift */; };
+		874CDB7C297FA3C400805DAC /* MockPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB7B297FA3C400805DAC /* MockPlayerView.swift */; };
+		874CDB7E297FA3E100805DAC /* NavBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB7D297FA3E100805DAC /* NavBackButton.swift */; };
+		874CDB80297FA3FD00805DAC /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB7F297FA3FD00805DAC /* IconView.swift */; };
+		874CDB82297FA41200805DAC /* ItunesItemsRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB81297FA41200805DAC /* ItunesItemsRaw.swift */; };
+		874CDB88297FA65700805DAC /* CellTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB87297FA65700805DAC /* CellTextModifier.swift */; };
+		874CDB8E297FAB7400805DAC /* Dictionnary + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB8D297FAB7400805DAC /* Dictionnary + Extensions.swift */; };
+		874CDB90297FAE1000805DAC /* SongInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB8F297FAE1000805DAC /* SongInfoView.swift */; };
+		874CDB95297FB27E00805DAC /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB94297FB27E00805DAC /* Texts.swift */; };
+		874CDB9D297FB8B500805DAC /* BundleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDB9C297FB8B500805DAC /* BundleReader.swift */; };
+		874CDBA0297FBBAD00805DAC /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = 874CDB9F297FBBAD00805DAC /* podcasts.json */; };
+		874CDBA4297FD01F00805DAC /* LoadedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDBA3297FD01F00805DAC /* LoadedImage.swift */; };
+		874CDBA9297FD06800805DAC /* ErrorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDBA8297FD06800805DAC /* ErrorScreen.swift */; };
+		874CDBAF298024B800805DAC /* ApiClientDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDBAE298024B800805DAC /* ApiClientDelegate.swift */; };
+		874CDBB1298024E700805DAC /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CDBB0298024E700805DAC /* ApiConstants.swift */; };
+		874CDBB42980273700805DAC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CDBB32980273700805DAC /* Launch Screen.storyboard */; };
+		874CDBB6298028B300805DAC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 874CDBB5298028B300805DAC /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		874CDB07297E351600805DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 874CDAE9297E351500805DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 874CDAF0297E351500805DAC;
+			remoteInfo = MyTunesRitage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		874CDAF1297E351500805DAC /* MyTunesRitage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTunesRitage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		874CDAF4297E351500805DAC /* MyTunesRitageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTunesRitageApp.swift; sourceTree = "<group>"; };
+		874CDAF6297E351500805DAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		874CDAF8297E351600805DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		874CDAFB297E351600805DAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		874CDB06297E351600805DAC /* MyTunesRitageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTunesRitageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		874CDB0A297E351600805DAC /* MyTunesRitageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTunesRitageTests.swift; sourceTree = "<group>"; };
+		874CDB28297E363600805DAC /* ItuneItemRaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItuneItemRaw.swift; sourceTree = "<group>"; };
+		874CDB45297E39B700805DAC /* MusicSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchInteractor.swift; sourceTree = "<group>"; };
+		874CDB4E297E3C3000805DAC /* MusicSearchBusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchBusinessLogic.swift; sourceTree = "<group>"; };
+		874CDB50297E3C6100805DAC /* MusicSearchPresenterLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchPresenterLogic.swift; sourceTree = "<group>"; };
+		874CDB52297E3C7700805DAC /* MusicSearchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchData.swift; sourceTree = "<group>"; };
+		874CDB54297E3C8E00805DAC /* MusicSearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchPresenter.swift; sourceTree = "<group>"; };
+		874CDB56297E3CA500805DAC /* MusicSearchDisplayLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchDisplayLogic.swift; sourceTree = "<group>"; };
+		874CDB58297E3CB700805DAC /* MusicSearchProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchProvider.swift; sourceTree = "<group>"; };
+		874CDB5A297E3CD000805DAC /* ItunesApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesApiClient.swift; sourceTree = "<group>"; };
+		874CDB5C297E3CF200805DAC /* GetApiDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetApiDelegate.swift; sourceTree = "<group>"; };
+		874CDB5E297E3CFE00805DAC /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		874CDB60297E3D0D00805DAC /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		874CDB62297E3D2000805DAC /* MusicSearchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSearchScreen.swift; sourceTree = "<group>"; };
+		874CDB66297E3E2E00805DAC /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		874CDB68297E552400805DAC /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		874CDB6A297F8DF700805DAC /* PodcastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastList.swift; sourceTree = "<group>"; };
+		874CDB6E297F8FE100805DAC /* SongDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsScreen.swift; sourceTree = "<group>"; };
+		874CDB79297FA38D00805DAC /* AsyncImage + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AsyncImage + Extensions.swift"; sourceTree = "<group>"; };
+		874CDB7B297FA3C400805DAC /* MockPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPlayerView.swift; sourceTree = "<group>"; };
+		874CDB7D297FA3E100805DAC /* NavBackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBackButton.swift; sourceTree = "<group>"; };
+		874CDB7F297FA3FD00805DAC /* IconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		874CDB81297FA41200805DAC /* ItunesItemsRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesItemsRaw.swift; sourceTree = "<group>"; };
+		874CDB87297FA65700805DAC /* CellTextModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTextModifier.swift; sourceTree = "<group>"; };
+		874CDB8D297FAB7400805DAC /* Dictionnary + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionnary + Extensions.swift"; sourceTree = "<group>"; };
+		874CDB8F297FAE1000805DAC /* SongInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfoView.swift; sourceTree = "<group>"; };
+		874CDB94297FB27E00805DAC /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		874CDB9C297FB8B500805DAC /* BundleReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleReader.swift; sourceTree = "<group>"; };
+		874CDB9F297FBBAD00805DAC /* podcasts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
+		874CDBA3297FD01F00805DAC /* LoadedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadedImage.swift; sourceTree = "<group>"; };
+		874CDBA8297FD06800805DAC /* ErrorScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorScreen.swift; sourceTree = "<group>"; };
+		874CDBAA297FD82900805DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		874CDBAE298024B800805DAC /* ApiClientDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientDelegate.swift; sourceTree = "<group>"; };
+		874CDBB0298024E700805DAC /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		874CDBB32980273700805DAC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		874CDBB5298028B300805DAC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		874CDAEE297E351500805DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874CDB03297E351600805DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		874CDAE8297E351500805DAC = {
+			isa = PBXGroup;
+			children = (
+				874CDBB5298028B300805DAC /* README.md */,
+				874CDAF3297E351500805DAC /* MyTunesRitage */,
+				874CDB09297E351600805DAC /* MyTunesRitageTests */,
+				874CDAF2297E351500805DAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		874CDAF2297E351500805DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				874CDAF1297E351500805DAC /* MyTunesRitage.app */,
+				874CDB06297E351600805DAC /* MyTunesRitageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		874CDAF3297E351500805DAC /* MyTunesRitage */ = {
+			isa = PBXGroup;
+			children = (
+				874CDBB22980271F00805DAC /* Launch */,
+				874CDBAA297FD82900805DAC /* Info.plist */,
+				874CDB64297E3DFE00805DAC /* Core */,
+				874CDB24297E35D200805DAC /* Scenes */,
+				874CDB23297E35C900805DAC /* Domain */,
+				874CDAF4297E351500805DAC /* MyTunesRitageApp.swift */,
+				874CDAF6297E351500805DAC /* ContentView.swift */,
+				874CDAF8297E351600805DAC /* Assets.xcassets */,
+				874CDAFA297E351600805DAC /* Preview Content */,
+			);
+			path = MyTunesRitage;
+			sourceTree = "<group>";
+		};
+		874CDAFA297E351600805DAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				874CDAFB297E351600805DAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		874CDB09297E351600805DAC /* MyTunesRitageTests */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB0A297E351600805DAC /* MyTunesRitageTests.swift */,
+			);
+			path = MyTunesRitageTests;
+			sourceTree = "<group>";
+		};
+		874CDB23297E35C900805DAC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB91297FB23200805DAC /* Texts */,
+				874CDB98297FB82D00805DAC /* Mocks */,
+				874CDB26297E35F100805DAC /* API */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		874CDB24297E35D200805DAC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB34297E387200805DAC /* MusicSearchScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		874CDB25297E35DD00805DAC /* ItunesAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB83297FA42000805DAC /* Data */,
+				874CDB5A297E3CD000805DAC /* ItunesApiClient.swift */,
+			);
+			path = ItunesAPIClient;
+			sourceTree = "<group>";
+		};
+		874CDB26297E35F100805DAC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				874CDBB0298024E700805DAC /* ApiConstants.swift */,
+				874CDBAD2980249500805DAC /* APIClient */,
+				874CDB5E297E3CFE00805DAC /* ApiError.swift */,
+				874CDB5C297E3CF200805DAC /* GetApiDelegate.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		874CDB34297E387200805DAC /* MusicSearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB4B297E39E600805DAC /* Data */,
+				874CDB3C297E395400805DAC /* MusicSearchPresenterLogic */,
+				874CDB3B297E394500805DAC /* MusicSearchBusinessLogic */,
+				874CDB3A297E393400805DAC /* MusicSearchDisplayLogic */,
+				874CDB37297E38E500805DAC /* Presentation */,
+				874CDB25297E35DD00805DAC /* ItunesAPIClient */,
+			);
+			path = MusicSearchScene;
+			sourceTree = "<group>";
+		};
+		874CDB37297E38E500805DAC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				874CDBA5297FD03A00805DAC /* ErrorScreen */,
+				874CDBA2297FD01700805DAC /* Views */,
+				874CDB6D297F8FB400805DAC /* SongDetailsScreen */,
+				874CDB6C297F8F9900805DAC /* MusicSearchScreen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		874CDB3A297E393400805DAC /* MusicSearchDisplayLogic */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB58297E3CB700805DAC /* MusicSearchProvider.swift */,
+				874CDB56297E3CA500805DAC /* MusicSearchDisplayLogic.swift */,
+			);
+			path = MusicSearchDisplayLogic;
+			sourceTree = "<group>";
+		};
+		874CDB3B297E394500805DAC /* MusicSearchBusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB4E297E3C3000805DAC /* MusicSearchBusinessLogic.swift */,
+				874CDB45297E39B700805DAC /* MusicSearchInteractor.swift */,
+			);
+			path = MusicSearchBusinessLogic;
+			sourceTree = "<group>";
+		};
+		874CDB3C297E395400805DAC /* MusicSearchPresenterLogic */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB54297E3C8E00805DAC /* MusicSearchPresenter.swift */,
+				874CDB50297E3C6100805DAC /* MusicSearchPresenterLogic.swift */,
+			);
+			path = MusicSearchPresenterLogic;
+			sourceTree = "<group>";
+		};
+		874CDB4B297E39E600805DAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB52297E3C7700805DAC /* MusicSearchData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		874CDB64297E3DFE00805DAC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB9E297FB8B900805DAC /* Tools */,
+				874CDB84297FA5DC00805DAC /* Modifiers */,
+				874CDB65297E3E0500805DAC /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		874CDB65297E3E0500805DAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB79297FA38D00805DAC /* AsyncImage + Extensions.swift */,
+				874CDB66297E3E2E00805DAC /* String + Extensions.swift */,
+				874CDB8D297FAB7400805DAC /* Dictionnary + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		874CDB6C297F8F9900805DAC /* MusicSearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB62297E3D2000805DAC /* MusicSearchScreen.swift */,
+				874CDB68297E552400805DAC /* SongCell.swift */,
+				874CDB6A297F8DF700805DAC /* PodcastList.swift */,
+			);
+			path = MusicSearchScreen;
+			sourceTree = "<group>";
+		};
+		874CDB6D297F8FB400805DAC /* SongDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB7B297FA3C400805DAC /* MockPlayerView.swift */,
+				874CDB6E297F8FE100805DAC /* SongDetailsScreen.swift */,
+				874CDB8F297FAE1000805DAC /* SongInfoView.swift */,
+			);
+			path = SongDetailsScreen;
+			sourceTree = "<group>";
+		};
+		874CDB83297FA42000805DAC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB28297E363600805DAC /* ItuneItemRaw.swift */,
+				874CDB81297FA41200805DAC /* ItunesItemsRaw.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		874CDB84297FA5DC00805DAC /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB87297FA65700805DAC /* CellTextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		874CDB91297FB23200805DAC /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB94297FB27E00805DAC /* Texts.swift */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
+		874CDB98297FB82D00805DAC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB9F297FBBAD00805DAC /* podcasts.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		874CDB9E297FB8B900805DAC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB9C297FB8B500805DAC /* BundleReader.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		874CDBA2297FD01700805DAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB7D297FA3E100805DAC /* NavBackButton.swift */,
+				874CDBA3297FD01F00805DAC /* LoadedImage.swift */,
+				874CDB7F297FA3FD00805DAC /* IconView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		874CDBA5297FD03A00805DAC /* ErrorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				874CDBA8297FD06800805DAC /* ErrorScreen.swift */,
+			);
+			path = ErrorScreen;
+			sourceTree = "<group>";
+		};
+		874CDBAD2980249500805DAC /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB60297E3D0D00805DAC /* APIClient.swift */,
+				874CDBAE298024B800805DAC /* ApiClientDelegate.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		874CDBB22980271F00805DAC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				874CDBB32980273700805DAC /* Launch Screen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		874CDAF0297E351500805DAC /* MyTunesRitage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874CDB1A297E351600805DAC /* Build configuration list for PBXNativeTarget "MyTunesRitage" */;
+			buildPhases = (
+				874CDAED297E351500805DAC /* Sources */,
+				874CDAEE297E351500805DAC /* Frameworks */,
+				874CDAEF297E351500805DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTunesRitage;
+			productName = MyTunesRitage;
+			productReference = 874CDAF1297E351500805DAC /* MyTunesRitage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		874CDB05297E351600805DAC /* MyTunesRitageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 874CDB1D297E351600805DAC /* Build configuration list for PBXNativeTarget "MyTunesRitageTests" */;
+			buildPhases = (
+				874CDB02297E351600805DAC /* Sources */,
+				874CDB03297E351600805DAC /* Frameworks */,
+				874CDB04297E351600805DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				874CDB08297E351600805DAC /* PBXTargetDependency */,
+			);
+			name = MyTunesRitageTests;
+			productName = MyTunesRitageTests;
+			productReference = 874CDB06297E351600805DAC /* MyTunesRitageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		874CDAE9297E351500805DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					874CDAF0297E351500805DAC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					874CDB05297E351600805DAC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 874CDAF0297E351500805DAC;
+					};
+				};
+			};
+			buildConfigurationList = 874CDAEC297E351500805DAC /* Build configuration list for PBXProject "MyTunesRitage" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 874CDAE8297E351500805DAC;
+			productRefGroup = 874CDAF2297E351500805DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				874CDAF0297E351500805DAC /* MyTunesRitage */,
+				874CDB05297E351600805DAC /* MyTunesRitageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		874CDAEF297E351500805DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874CDBA0297FBBAD00805DAC /* podcasts.json in Resources */,
+				874CDAFC297E351600805DAC /* Preview Assets.xcassets in Resources */,
+				874CDBB42980273700805DAC /* Launch Screen.storyboard in Resources */,
+				874CDAF9297E351600805DAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874CDB04297E351600805DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		874CDAED297E351500805DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874CDB59297E3CB800805DAC /* MusicSearchProvider.swift in Sources */,
+				874CDB7C297FA3C400805DAC /* MockPlayerView.swift in Sources */,
+				874CDB53297E3C7700805DAC /* MusicSearchData.swift in Sources */,
+				874CDB6F297F8FE100805DAC /* SongDetailsScreen.swift in Sources */,
+				874CDB5F297E3CFE00805DAC /* ApiError.swift in Sources */,
+				874CDB9D297FB8B500805DAC /* BundleReader.swift in Sources */,
+				874CDAF7297E351500805DAC /* ContentView.swift in Sources */,
+				874CDB46297E39B700805DAC /* MusicSearchInteractor.swift in Sources */,
+				874CDAF5297E351500805DAC /* MyTunesRitageApp.swift in Sources */,
+				874CDB6B297F8DF700805DAC /* PodcastList.swift in Sources */,
+				874CDB69297E552400805DAC /* SongCell.swift in Sources */,
+				874CDBB6298028B300805DAC /* README.md in Sources */,
+				874CDBB1298024E700805DAC /* ApiConstants.swift in Sources */,
+				874CDB57297E3CA500805DAC /* MusicSearchDisplayLogic.swift in Sources */,
+				874CDB82297FA41200805DAC /* ItunesItemsRaw.swift in Sources */,
+				874CDB7A297FA38D00805DAC /* AsyncImage + Extensions.swift in Sources */,
+				874CDB80297FA3FD00805DAC /* IconView.swift in Sources */,
+				874CDB5B297E3CD000805DAC /* ItunesApiClient.swift in Sources */,
+				874CDB51297E3C6100805DAC /* MusicSearchPresenterLogic.swift in Sources */,
+				874CDB95297FB27E00805DAC /* Texts.swift in Sources */,
+				874CDB7E297FA3E100805DAC /* NavBackButton.swift in Sources */,
+				874CDB4F297E3C3000805DAC /* MusicSearchBusinessLogic.swift in Sources */,
+				874CDB8E297FAB7400805DAC /* Dictionnary + Extensions.swift in Sources */,
+				874CDB55297E3C8E00805DAC /* MusicSearchPresenter.swift in Sources */,
+				874CDBA4297FD01F00805DAC /* LoadedImage.swift in Sources */,
+				874CDB5D297E3CF200805DAC /* GetApiDelegate.swift in Sources */,
+				874CDB67297E3E2E00805DAC /* String + Extensions.swift in Sources */,
+				874CDB63297E3D2000805DAC /* MusicSearchScreen.swift in Sources */,
+				874CDB88297FA65700805DAC /* CellTextModifier.swift in Sources */,
+				874CDBA9297FD06800805DAC /* ErrorScreen.swift in Sources */,
+				874CDB29297E363600805DAC /* ItuneItemRaw.swift in Sources */,
+				874CDB90297FAE1000805DAC /* SongInfoView.swift in Sources */,
+				874CDBAF298024B800805DAC /* ApiClientDelegate.swift in Sources */,
+				874CDB61297E3D0D00805DAC /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		874CDB02297E351600805DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				874CDB0B297E351600805DAC /* MyTunesRitageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		874CDB08297E351600805DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 874CDAF0297E351500805DAC /* MyTunesRitage */;
+			targetProxy = 874CDB07297E351600805DAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		874CDB18297E351600805DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		874CDB19297E351600805DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		874CDB1B297E351600805DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTunesRitage/Preview Content\"";
+				DEVELOPMENT_TEAM = STFH26U9BW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTunesRitage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MyTunesRitage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		874CDB1C297E351600805DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyTunesRitage/Preview Content\"";
+				DEVELOPMENT_TEAM = STFH26U9BW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTunesRitage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MyTunesRitage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		874CDB1E297E351600805DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STFH26U9BW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MyTunesRitageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTunesRitage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTunesRitage";
+			};
+			name = Debug;
+		};
+		874CDB1F297E351600805DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STFH26U9BW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.moondev.MyTunesRitageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTunesRitage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyTunesRitage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		874CDAEC297E351500805DAC /* Build configuration list for PBXProject "MyTunesRitage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874CDB18297E351600805DAC /* Debug */,
+				874CDB19297E351600805DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874CDB1A297E351600805DAC /* Build configuration list for PBXNativeTarget "MyTunesRitage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874CDB1B297E351600805DAC /* Debug */,
+				874CDB1C297E351600805DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		874CDB1D297E351600805DAC /* Build configuration list for PBXNativeTarget "MyTunesRitageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				874CDB1E297E351600805DAC /* Debug */,
+				874CDB1F297E351600805DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 874CDAE9297E351500805DAC /* Project object */;
+}
