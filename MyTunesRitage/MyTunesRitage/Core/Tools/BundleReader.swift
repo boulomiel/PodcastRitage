@@ -13,6 +13,5 @@ struct BundleReader {
         let url    = Bundle.main.url(forResource: filename, withExtension: ext)!
         let data   =  try! Data(contentsOf: url)
         return try! JSONDecoder().decode( T.self, from: data)
-        
     }
 }

@@ -52,5 +52,4 @@ enum MusicSearchData {
             static let mock : Self = .init(title : "Oops", reason: "Some stuff happened")
         }
     }
-    
 }

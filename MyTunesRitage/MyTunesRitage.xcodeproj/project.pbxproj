@@ -213,25 +213,14 @@
 		874CDB34297E387200805DAC /* MusicSearchScene */ = {
 			isa = PBXGroup;
 			children = (
+				874CDBA2297FD01700805DAC /* Views */,
+				874CDBA5297FD03A00805DAC /* ErrorScreen */,
+				874CDB6D297F8FB400805DAC /* SongDetailsScreen */,
+				87C781B32982966300AC06D7 /* MusicSearchScreen */,
 				874CDB4B297E39E600805DAC /* Data */,
-				874CDB3C297E395400805DAC /* MusicSearchPresenterLogic */,
-				874CDB3B297E394500805DAC /* MusicSearchBusinessLogic */,
-				874CDB3A297E393400805DAC /* MusicSearchDisplayLogic */,
-				874CDB37297E38E500805DAC /* Presentation */,
 				874CDB25297E35DD00805DAC /* ItunesAPIClient */,
 			);
 			path = MusicSearchScene;
-			sourceTree = "<group>";
-		};
-		874CDB37297E38E500805DAC /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				874CDBA5297FD03A00805DAC /* ErrorScreen */,
-				874CDBA2297FD01700805DAC /* Views */,
-				874CDB6D297F8FB400805DAC /* SongDetailsScreen */,
-				874CDB6C297F8F9900805DAC /* MusicSearchScreen */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 		874CDB3A297E393400805DAC /* MusicSearchDisplayLogic */ = {
@@ -383,6 +372,17 @@
 				874CDBB32980273700805DAC /* Launch Screen.storyboard */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		87C781B32982966300AC06D7 /* MusicSearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				874CDB3C297E395400805DAC /* MusicSearchPresenterLogic */,
+				874CDB3B297E394500805DAC /* MusicSearchBusinessLogic */,
+				874CDB3A297E393400805DAC /* MusicSearchDisplayLogic */,
+				874CDB6C297F8F9900805DAC /* MusicSearchScreen */,
+			);
+			path = MusicSearchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
